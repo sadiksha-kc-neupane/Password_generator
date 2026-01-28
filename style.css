@@ -2,4 +2,37 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: poppins, sans-serif;
+}
+
+body {
+  background-color: rgb(24, 97, 119);
+  color: #fff;
+}
+
+.container {
+  max-width: 700px;
+  margin: 12%;
+  width: 90%;
+}
+
+.display {
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  background: #fff;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 26px 20px;
+  border-radius: 6px;
+}
+
+.display img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
 }
