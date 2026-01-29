@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: rgb(24, 97, 119);
+  background-color: rgba(21, 182, 241, 0.897);
   color: #fff;
 }
 
@@ -26,13 +26,25 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 26px 20px;
-  border-radius: 6px;
+  border-radius: 5px;
 }
 
 .display img {
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   border-radius: 50%;
   object-fit: cover;
   margin-right: 20px;
+  cursor: pointer;
+}
+
+.container h1 {
+  font-weight: 500;
+  font-size: 45px;
+}
+
+.container h1 span {
+  color: rgb(29, 38, 91);
+  border-bottom: 4px solid rgb(29, 38, 91);
+  padding-bottom: 7px;
 }
