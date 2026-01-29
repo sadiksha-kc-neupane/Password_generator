@@ -17,6 +17,8 @@ body {
 }
 
 .display {
+  box-sizing: border-box;
+  height: 100px;
   width: 100%;
   margin-top: 50px;
   margin-bottom: 30px;
@@ -38,14 +40,20 @@ body {
   cursor: pointer;
 }
 
+.display input {
+  width: 75%;
+  height: 75%;
+  font-size: 18px;
+}
+
 .container h1 {
   font-weight: 500;
   font-size: 45px;
 }
 
 .container h1 span {
-  color: rgb(6, 54, 18);
-  border-bottom: 4px solid rgb(6, 54, 18);
+  color: rgb(16, 88, 33);
+  border-bottom: 4px solid rgb(16, 88, 33);
   padding-bottom: 7px;
 }
 
