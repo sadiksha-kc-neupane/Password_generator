@@ -7,6 +7,8 @@ const symbols = "!@#$%^&*()_+~`|}{[]:;?><,./-=";
 
 const allChars = upperCase + lowerCase + numbers + symbols;
 
+// console.log("Script loaded");
+
 function shufflePassword(password) {
   let passwordArray = password.split("");
   for (let i = passwordArray.length - 1; i > 0; i--) {
@@ -33,3 +35,28 @@ const button = document.querySelector("button");
 button.addEventListener("click", () => {
   createPassword();
 });
+
+function copyPassword() {
+  console.log("copyPassword called");
+  if (!passwordBox.value) {
+    createPassword();
+  }
+  navigator.clipboard
+    .writeText(passwordBox.value)
+    .then(() => {
+      alert("Password copied to clipboard!");
+    })
+    .catch((error) => {
+      console.error("Copy failed:", error);
+      alert("Failed to copy password");
+    });
+}
+
+// Attach copy event listener to the copy image
+const copyImg = document.querySelector("img[src='copy.svg']");
+if (copyImg) {
+  copyImg.addEventListener("click", copyPassword);
+}
+// } else {
+//   console.error("Copy image not found");
+// }
